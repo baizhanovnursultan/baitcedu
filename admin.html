@@ -6,12 +6,14 @@
     <title>Admin - Course Management</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1e1e2f;
+            color: #fff;
             padding: 20px;
         }
         h1 {
-            color: #333;
+            color: #00e676;
+            text-shadow: 0 0 5px #00e676;
         }
         .course-list, .crud-operations {
             margin: 20px 0;
@@ -19,26 +21,39 @@
         .course-list table {
             width: 100%;
             border-collapse: collapse;
+            background-color: #252547;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
         .course-list table th, .course-list table td {
-            border: 1px solid #ddd;
+            border: 1px solid #00e676;
             padding: 10px;
             text-align: left;
+            color: #fff;
         }
         .course-list table th {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #333355;
+            color: #00e676;
         }
         .crud-operations button {
             margin-right: 10px;
             padding: 10px 15px;
-            background-color: #4CAF50;
-            color: white;
+            background-color: #00e676;
+            color: #1e1e2f;
             border: none;
             cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 230, 118, 0.5);
+            transition: transform 0.3s;
+        }
+        .crud-operations button:hover {
+            transform: scale(1.05);
         }
         .nav-link {
             margin-top: 20px;
+        }
+        .nav-link a {
+            color: #00e676;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
