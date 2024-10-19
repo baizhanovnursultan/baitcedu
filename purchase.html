@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Purchase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        .purchase-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .nav-link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Purchase Course</h1>
+    <div class="purchase-box">
+        <p><strong>Course Name:</strong> Python for Beginners</p>
+        <p><strong>Price:</strong> $50</p>
+        <h2>Payment Details</h2>
+        <input type="text" placeholder="Cardholder's Name">
+        <input type="number" placeholder="Card Number">
+        <input type="number" placeholder="CVV">
+        <input type="text" placeholder="Expiry Date">
+        <button>Pay Now</button>
+    </div>
+    <div class="nav-link">
+        <a href="course-list.html">Back to Course List</a>
+    </div>
+</body>
+</html>

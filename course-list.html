@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .course {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course-video {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .badges {
+            margin-top: 20px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .nav-link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Available Courses</h1>
+    <div class="course">
+        <h2>Python for Beginners</h2>
+        <video class="course-video" controls>
+            <source src="course-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="badges">
+            <span class="badge">Beginner</span>
+            <span class="badge">Python</span>
+            <span class="badge">Completed</span>
+        </div>
+        <div class="nav-link">
+            <a href="purchase.html">Purchase Course</a>
+        </div>
+    </div>
+</body>
+</html>
