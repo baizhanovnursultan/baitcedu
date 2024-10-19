@@ -7,61 +7,105 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #1e1e2f;
-            color: #fff;
+            background: linear-gradient(135deg, #1e1e2f, #3d3d5c);
+            color: #d1d1e9;
             padding: 20px;
         }
         h1 {
-            color: #00e676;
-            text-shadow: 0 0 5px #00e676;
+            text-align: center;
+            color: #00ff9d;
+            margin-bottom: 30px;
         }
-        .course {
-            background-color: #252547;
+        .course-card {
+            background: rgba(30, 30, 47, 0.9);
             padding: 20px;
             border-radius: 10px;
-            margin: 20px 0;
-            box-shadow: 0 0 15px rgba(0, 0, 230, 118, 0.5);
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 255, 157, 0.4);
+            transition: transform 0.3s ease;
         }
-        .course-video {
-            width: 100%;
-            border-radius: 10px;
+        .course-card:hover {
+            transform: scale(1.05);
         }
-        .badges {
-            margin-top: 20px;
+        .course-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #00ff9d;
         }
-        .badge {
-            display: inline-block;
-            padding: 10px;
-            background-color: #00e676;
-            color: #1e1e2f;
+        .course-description {
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #00ff9d;
+            color: black;
+            border: none;
             border-radius: 5px;
-            margin-right: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0099ff;
         }
         .nav-link {
+            text-align: center;
             margin-top: 20px;
         }
         .nav-link a {
-            color: #00e676;
+            color: #00ff9d;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav-link a:hover {
+            color: #0099ff;
+        }
+        .realization-btn {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .realization-btn a {
+            background-color: #00ff9d;
+            padding: 15px 30px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .realization-btn a:hover {
+            background-color: #0099ff;
         }
     </style>
 </head>
 <body>
     <h1>Available Courses</h1>
-    <div class="course">
-        <h2>Artificial Intelligence (AI) Strategy</h2>
-        <video class="course-video" controls>
-            <source src="course-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="badges">
-            <span class="badge">Beginner</span>
-            <span class="badge">Python</span>
-            <span class="badge">Completed</span>
-        </div>
-        <div class="nav-link">
-            <a href="purchase.html">Purchase Course</a>
-        </div>
+
+    <div class="course-card">
+        <div class="course-title">Course 1: Introduction to Blockchain</div>
+        <div class="course-description">Learn the basics of blockchain technology and how it revolutionizes industries.</div>
+        <button>Start Course</button>
+    </div>
+
+    <div class="course-card">
+        <div class="course-title">Course 2: AI for Beginners</div>
+        <div class="course-description">Understand the fundamentals of Artificial Intelligence and its real-world applications.</div>
+        <button>Start Course</button>
+    </div>
+
+    <div class="course-card">
+        <div class="course-title">Course 3: Advanced Data Engineering</div>
+        <div class="course-description">Dive deep into data engineering and learn how to handle large-scale data systems.</div>
+        <button>Start Course</button>
+    </div>
+
+    <div class="nav-link">
+        <a href="admin.html">Admin Page</a>
+    </div>
+
+    <div class="realization-btn">
+        <a href="https://4535-67-209-138-181.ngrok-free.app/" target="_blank">Realization</a>
     </div>
 </body>
 </html>
