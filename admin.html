@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Course Management</title>
+    <title>BAITC EDU</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #2b2e4a, #303451);
+            background-color: #1e1e2f;
             color: #fff;
             padding: 20px;
         }
         h1 {
-            color: #43d4ff;
-            font-weight: 700;
-            text-shadow: 0 0 5px #43d4ff;
+            color: #00e676;
+            text-shadow: 0 0 5px #00e676;
         }
         .course-list, .crud-operations {
             margin: 20px 0;
@@ -22,27 +21,27 @@
         .course-list table {
             width: 100%;
             border-collapse: collapse;
-            background-color: #313654;
+            background-color: #252547;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
         .course-list table th, .course-list table td {
-            border: 1px solid #43d4ff;
+            border: 1px solid #00e676;
             padding: 10px;
             text-align: left;
             color: #fff;
         }
         .course-list table th {
-            background-color: #3a4067;
-            color: #43d4ff;
+            background-color: #333355;
+            color: #00e676;
         }
         .crud-operations button {
             margin-right: 10px;
             padding: 10px 15px;
-            background-color: #43d4ff;
-            color: #2b2e4a;
+            background-color: #00e676;
+            color: #1e1e2f;
             border: none;
             cursor: pointer;
-            box-shadow: 0 0 10px rgba(67, 212, 255, 0.5);
+            box-shadow: 0 0 10px rgba(0, 230, 118, 0.5);
             transition: transform 0.3s;
         }
         .crud-operations button:hover {
@@ -52,17 +51,14 @@
             margin-top: 20px;
         }
         .nav-link a {
-            color: #43d4ff;
+            color: #00e676;
             text-decoration: none;
             font-weight: bold;
-        }
-        .nav-link a:hover {
-            text-shadow: 0 0 5px #43d4ff;
         }
     </style>
 </head>
 <body>
-    <h1>Admin Panel - Course Management</h1>
+    <h1>BAITC EDU</h1>
     <div class="crud-operations">
         <button onclick="addCourse()">Add Course</button>
         <button onclick="updateCourse()">Update Course</button>
@@ -82,13 +78,13 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Python for Data Science</td>
+                    <td>Blockchain and Bitcoin Fundamentals</td>
                     <td>John Doe</td>
                     <td><button>Edit</button> <button>Delete</button></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Web Development with Flask</td>
+                    <td>Artificial Intelligence (AI) Strategy</td>
                     <td>Jane Smith</td>
                     <td><button>Edit</button> <button>Delete</button></td>
                 </tr>
@@ -96,7 +92,7 @@
         </table>
     </div>
     <div class="nav-link">
-        <a href="course-list.html">Go to Course List</a>
+        <a href="course-list.html">Course List</a>
     </div>
 </body>
 </html>
