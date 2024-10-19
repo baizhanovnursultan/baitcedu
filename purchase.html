@@ -3,56 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Purchase</title>
+    <title>Purchase Course</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #3d3d5c);
+            color: #d1d1e9;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .purchase-box {
-            background-color: white;
-            padding: 20px;
+            background: rgba(30, 30, 47, 0.9);
+            padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 255, 157, 0.4);
+            color: #d1d1e9;
+            width: 400px;
         }
         h1 {
-            color: #333;
+            text-align: center;
+            color: #00ff9d;
+            margin-bottom: 20px;
         }
-        input[type="text"], input[type="number"] {
+        input[type="text"], input[type="email"], input[type="number"] {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin: 10px 0;
             border-radius: 5px;
-            border: 1px solid #ddd;
+            border: 1px solid #444;
+            background: #1e1e2f;
+            color: #d1d1e9;
         }
         button {
             width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
+            padding: 12px;
+            background-color: #00ff9d;
+            color: black;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
+            transition: 0.3s ease;
+        }
+        button:hover {
+            background-color: #0099ff;
+            transform: scale(1.05);
         }
         .nav-link {
+            text-align: center;
             margin-top: 20px;
+        }
+        .nav-link a {
+            color: #00ff9d;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav-link a:hover {
+            color: #0099ff;
         }
     </style>
 </head>
 <body>
-    <h1>Purchase Course</h1>
     <div class="purchase-box">
-        <p><strong>Course Name:</strong> Python for Beginners</p>
-        <p><strong>Price:</strong> $50</p>
-        <h2>Payment Details</h2>
-        <input type="text" placeholder="Cardholder's Name">
-        <input type="number" placeholder="Card Number">
-        <input type="number" placeholder="CVV">
+        <h1>Purchase Course</h1>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="number" placeholder="Credit Card Number">
         <input type="text" placeholder="Expiry Date">
+        <input type="number" placeholder="CVV">
         <button>Pay Now</button>
-    </div>
-    <div class="nav-link">
-        <a href="course-list.html">Back to Course List</a>
+        <div class="nav-link">
+            <a href="course-list.html">Back to Courses</a>
+        </div>
     </div>
 </body>
 </html>
