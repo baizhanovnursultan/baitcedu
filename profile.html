@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #3d3d5c);
+            color: #d1d1e9;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #00ff9d;
+            margin-bottom: 30px;
+        }
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(30, 30, 47, 0.9);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 255, 157, 0.4);
+        }
+        .profile-header .streak {
+            display: flex;
+            align-items: center;
+        }
+        .profile-header .streak img {
+            width: 30px;
+            margin-right: 10px;
+        }
+        .profile-header .streak .streak-info {
+            color: #ff9d00;
+            font-size: 18px;
+        }
+        .follower-info {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .follower-info div {
+            margin: 0 15px;
+            text-align: center;
+        }
+        .follower-info div h3 {
+            color: #00ff9d;
+            margin: 0;
+        }
+        .profile-info {
+            background: rgba(30, 30, 47, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 157, 0.4);
+        }
+        .info-block {
+            margin-bottom: 20px;
+        }
+        .info-block h2 {
+            color: #00ff9d;
+            margin-bottom: 10px;
+        }
+        .info-block ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info-block ul li {
+            background: rgba(30, 30, 47, 0.9);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 255, 157, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-link a {
+            color: #00ff9d;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav-link a:hover {
+            color: #0099ff;
+        }
+        .add-friends-btn {
+            background-color: #00ff9d;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .add-friends-btn:hover {
+            background-color: #0099ff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Profile</h1>
+
+    <div class="profile-header">
+        <div>
+            <h2>John Doe</h2>
+            <p>Email: johndoe@example.com</p>
+        </div>
+        <div class="streak">
+            <img src="https://cdn-icons-png.flaticon.com/512/616/616530.png" alt="fire streak">
+            <div class="streak-info">114/365 Day Streak</div>
+        </div>
+    </div>
+
+    <div class="follower-info">
+        <div>
+            <h3>2467</h3>
+            <p>Followers</p>
+        </div>
+        <div>
+            <h3>150</h3>
+            <p>Following</p>
+        </div>
+    </div>
+
+    <div class="profile-info">
+        <div class="info-block">
+            <h2>Subscriptions</h2>
+            <ul>
+                <li>Course: Advanced AI Techniques</li>
+                <li>Course: Blockchain Development</li>
+            </ul>
+        </div>
+
+        <div class="info-block">
+            <h2>Challenges with Friends</h2>
+            <ul>
+                <li>John vs Jane 🤼 - AI Quiz Challenge</li>
+                <li>John vs Michael 🤼 - Blockchain Coding Sprint</li>
+            </ul>
+        </div>
+
+        <div class="info-block">
+            <h2>Achievements</h2>
+            <ul>
+                <li>🏅 First Course Completed</li>
+                <li>🏆 100 Days of Learning</li>
+                <li>🥇 Challenge Champion</li>
+            </ul>
+        </div>
+
+        <button class="add-friends-btn">Add Friends</button>
+    </div>
+
+    <div class="nav-link">
+        <a href="course-list.html">Back to Courses</a>
+    </div>
+
+</body>
+</html>
